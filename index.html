@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muhammad Ditto Alfiansyah - Developer CV</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #2563eb;
+            --secondary: #3b82f6;
+            --dark: #1e293b;
+            --light: #f1f5f9;
+            --gray: #64748b;
+            --code-bg: #1a1a1a;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', 'Source Code Pro', monospace;
+        }
+
+        body {
+            background: var(--light);
+            color: var(--dark);
+            line-height: 1.6;
+            padding: 40px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+            border-radius: 16px;
+            overflow: hidden;
+        }
+
+        .header {
+            background: var(--code-bg);
+            color: white;
+            padding: 40px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .header::before {
+            content: '<header>';
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            color: #45475a;
+            font-family: monospace;
+        }
+
+        .header::after {
+            content: '</header>';
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            color: #45475a;
+            font-family: monospace;
+        }
+
+        .matrix-bg {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            width: 40%;
+            opacity: 0.1;
+            background: linear-gradient(45deg, transparent 45%, var(--primary) 45%, var(--primary) 55%, transparent 55%);
+            background-size: 10px 10px;
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            color: var(--secondary);
+        }
+
+        .contact-info {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 15px;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            color: #94a3b8;
+        }
+
+        .main-content {
+            padding: 40px;
+        }
+
+        .section {
+            margin-bottom: 30px;
+            position: relative;
+        }
+
+        .section::before {
+            content: '<section>';
+            position: absolute;
+            top: -20px;
+            left: 0;
+            color: var(--gray);
+            font-size: 0.8em;
+            opacity: 0.5;
+            font-family: monospace;
+        }
+
+        .section::after {
+            content: '</section>';
+            position: absolute;
+            bottom: -20px;
+            left: 0;
+            color: var(--gray);
+            font-size: 0.8em;
+            opacity: 0.5;
+            font-family: monospace;
+        }
+
+        .section-title {
+            color: var(--primary);
+            font-size: 1.4em;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .section-title i {
+            color: var(--secondary);
+        }
+
+        .content {
+            padding-left: 20px;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+            margin-top: 15px;
+        }
+
+        .skill-item {
+            background: var(--light);
+            padding: 12px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            transition: transform 0.2s;
+        }
+
+        .skill-item:hover {
+            transform: translateY(-2px);
+        }
+
+        .project-item {
+            background: var(--light);
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+
+        .project-item strong {
+            color: var(--primary);
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        .education-item {
+            background: var(--light);
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+
+        .code-comment {
+            color: var(--gray);
+            font-family: monospace;
+            margin-bottom: 10px;
+            font-size: 0.9em;
+        }
+
+        .language-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 10px;
+        }
+
+        .progress-bar {
+            width: 150px;
+            height: 8px;
+            background: #e2e8f0;
+            border-radius: 4px;
+            overflow: hidden;
+        }
+
+        .progress {
+            height: 100%;
+            background: var(--secondary);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="matrix-bg"></div>
+            <h1>Muhammad Ditto Alfiansyah</h1>
+            <div class="code-comment">// Aspiring Web Developer</div>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    Jl. Beta VIII
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    083837534805
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    dittosanzz05@gmail.com
+                </div>
+            </div>
+        </header>
+
+        <main class="main-content">
+            <div class="section">
+                <h2 class="section-title">
+                    <i class="fas fa-code"></i>
+                    Tujuan Karir
+                </h2>
+                <div class="code-comment">/* Passionate about web development */</div>
+                <div class="content">
+                    <p>Mencari posisi sebagai web programmer dengan fokus pada pengembangan full-stack untuk meningkatkan skill dan berkontribusi dalam industri teknologi.</p>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2 class="section-title">
+                    <i class="fas fa-graduation-cap"></i>
+                    Pendidikan
+                </h2>
+                <div class="content">
+                    <div class="education-item">
+                        <strong>SMKN 4 Kota Tangerang</strong>
+                        <div>Rekayasa Perangkat Lunak (RPL)</div>
+                        <div class="code-comment">// 2023 - Sekarang</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2 class="section-title">
+                    <i class="fas fa-laptop-code"></i>
+                    Proyek
+                </h2>
+                <div class="content">
+                    <div class="project-item">
+                        <strong>UI/UX Design with Figma</strong>
+                        <p>Merancang antarmuka pengguna modern menggunakan Figma untuk proyek sekolah.</p>
+                    </div>
+                    <div class="project-item">
+                        <strong>Responsive Web Layout</strong>
+                        <p>Mengembangkan layout web responsif dengan HTML5 & CSS3.</p>
+                    </div>
+                    <div class="project-item">
+                        <strong>Web Enhancement Project</strong>
+                        <p>Optimisasi dan penyempurnaan proyek web dengan fokus pada UX.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2 class="section-title">
+                    <i class="fas fa-tools"></i>
+                    Tech Stack
+                </h2>
+                <div class="content">
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <i class="fas fa-paint-brush"></i>
+                            UI/UX Design
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-html5"></i>
+                            Front-End Dev
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-server"></i>
+                            Back-End Dev
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-figma"></i>
+                            Figma
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-mobile-alt"></i>
+                            Responsive Design
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-sync-alt"></i>
+                            Quick Learner
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2 class="section-title">
+                    <i class="fas fa-language"></i>
+                    Bahasa
+                </h2>
+                <div class="content">
+                    <div class="language-item">
+                        <span>Bahasa Indonesia</span>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 100%"></div>
+                        </div>
+                    </div>
+                    <div class="language-item">
+                        <span>English</span>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 60%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
